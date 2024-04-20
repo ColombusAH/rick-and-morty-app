@@ -27,6 +27,7 @@ npm install @types/express @types/bcrypt @types/jsonwebtoken @types/express-vali
 /rick-and-morty-app
 |-- /src
 |   |-- /config         # Configuration files
+    |-- /routes         # routes
 |   |-- /controllers    # Route controllers
 |   |-- /entities       # TypeORM entities
 |   |-- /middlewares    # Authentication and validation middleware
@@ -38,6 +39,38 @@ npm install @types/express @types/bcrypt @types/jsonwebtoken @types/express-vali
 |-- /dist               # Transpiled files from TypeScript to JavaScript
 |-- ormconfig.json      # TypeORM configuration
 |-- tsconfig.json       # TypeScript configuration
+
+```
+
+## VS 
+```bash
+/rick-and-morty-app
+|-- /src
+|   |-- /features
+|   |   |-- /characters               # Feature for characters
+|   |   |   |-- /controllers          # Controllers specific to characters
+|   |   |   |-- /services             # Business logic for characters
+|   |   |   |-- /middlewares          # Middlewares specific to characters
+|   |   |   |-- /validators           # Request validators for character routes
+|   |   |   |-- /types                # TypeScript types specific to characters
+|   |   |   |-- index.ts              # Aggregates and exports the feature
+|   |   |-- /locations                # Feature for locations
+|   |   |   |-- /controllers          # Controllers specific to locations
+|   |   |   |-- /services             # Services specific to locations
+|   |   |   |-- /middlewares          # Middlewares specific to locations
+|   |   |   |-- /validators           # Validators for locations
+|   |   |   |-- /types                # Types for locations
+|   |   |   |-- index.ts              # Aggregates and exports the feature
+|   |-- /core
+|   |   |-- /config                   # Configuration files
+|   |   |-- /database                 # Database utilities, entities and TypeORM config
+|   |   |-- /common                   # Common utilities and helpers used across features
+|   |   |-- /middlewares              # Common middlewares
+|   |-- app.ts                        # Main Express app setup
+|   |-- server.ts                     # Server entry point
+|-- /dist                             # Transpiled files from TypeScript to JavaScript
+|-- ormconfig.json                    # TypeORM configuration
+|-- tsconfig.json                     # TypeScript configuration
 
 ```
 
