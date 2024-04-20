@@ -40,3 +40,10 @@ npm install @types/express @types/bcrypt @types/jsonwebtoken @types/express-vali
 |-- tsconfig.json       # TypeScript configuration
 
 ```
+
+
+### nodemon
+
+```bash
+npm install --save-dev nodemon ts-node
+```
