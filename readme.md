@@ -80,3 +80,18 @@ npm install @types/express @types/bcrypt @types/jsonwebtoken @types/express-vali
 ```bash
 npm install --save-dev nodemon ts-node
 ```
+
+
+## for pg and auth 
+
+```bash
+npm i pg
+npm i -D @types/pg
+
+docker compose up -d
+```
+
+there are two users john_doe & jane_doe . password: password
+
+
+
