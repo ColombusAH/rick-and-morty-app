@@ -22,6 +22,10 @@ class AuthService {
         const token = jwt.sign({ id: user.id }, secret, { expiresIn: '12h' });
         return token;
     }
+
+    static async getUser(id: number) {
+        return UserRepository.findUserById(id);
+    }
 }
 
 export default AuthService;
