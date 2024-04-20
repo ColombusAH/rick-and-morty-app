@@ -100,3 +100,10 @@ there are two users john_doe & jane_doe . password: password
 ```bash
 npm i zod
 ```
+
+
+swagger 
+
+```bash
+npm i -D swagger-jsdoc swagger-ui-express
+```
