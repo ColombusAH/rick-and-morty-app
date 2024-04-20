@@ -95,3 +95,8 @@ there are two users john_doe & jane_doe . password: password
 
 
 
+
+###validation
+```bash
+npm i zod
+```
