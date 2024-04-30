@@ -1,6 +1,6 @@
 # Rick and Morty API Express TypeScript Application
 
-This guide provides detailed steps to create an Express TypeScript application that consumes the Rick and Morty API. The application includes authentication, validation middleware, a SQL ORM (TypeORM), and Swagger documentation.
+This guide provides detailed steps to create an Express TypeScript application that consumes the Rick and Morty API. The application includes authentication, validation middleware, a ORM (TypeORM), and Swagger documentation.
 
 ## Step 1: Project Setup
 
@@ -15,7 +15,7 @@ npx tsc --init
 
 ```
 ```bash
-npm install express typeorm mysql reflect-metadata class-validator class-transformer jsonwebtoken bcrypt express-validator swagger-ui-express axios
+npm install express typeorm reflect-metadata class-validator class-transformer jsonwebtoken bcrypt express-validator swagger-ui-express axios
 ```
 
 ```bash
@@ -36,8 +36,7 @@ npm install @types/express @types/bcrypt @types/jsonwebtoken @types/express-vali
 |   |-- /utils          # Utility functions
 |   |-- app.ts          # Express app
 |   |-- server.ts       # Server entry point
-|-- /dist               # Transpiled files from TypeScript to JavaScript
-|-- ormconfig.json      # TypeORM configuration
+|-- /dist               # Transpiled files from TypeScript to JavaScript`
 |-- tsconfig.json       # TypeScript configuration
 
 ```
@@ -69,7 +68,7 @@ npm install @types/express @types/bcrypt @types/jsonwebtoken @types/express-vali
 |   |-- app.ts                        # Main Express app setup
 |   |-- server.ts                     # Server entry point
 |-- /dist                             # Transpiled files from TypeScript to JavaScript
-|-- ormconfig.json                    # TypeORM configuration
+configuration
 |-- tsconfig.json                     # TypeScript configuration
 
 ```
